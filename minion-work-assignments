@@ -1,0 +1,24 @@
+# working solution number 01
+def solution(data, n):
+
+    # uses list comprehension, 
+    # if the count of the work assignments is less then the given number
+    # iterate through the data range and assign the assignments to the
+    # new minion ToDo List.
+    minionToDoList = [x for x in data if data.count(x) <= n]
+    
+    return minionToDoList
+
+# working solution number 02
+
+# def solution(data, n): 
+#     tempdata = []
+
+#     # Uses a for loop
+#     for i in data:
+#          # count each task
+#          x = data.count(i)
+#          if x <= n:
+#              # appends numbers to a new list
+#              tempdata.append(i)
+#     return tempdata
